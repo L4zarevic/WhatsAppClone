@@ -22,6 +22,7 @@ public class StartPage extends AppCompatActivity {
         if (ParseUser.getCurrentUser() != null) {
             Intent intentLogIn = new Intent(StartPage.this, MainActivity.class);
             startActivity(intentLogIn);
+            finish();
         }
 
 
